@@ -39,7 +39,7 @@ class SettingsServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__.'/resources/views/', 'settings');
         $this->loadRoutesFrom(__DIR__.'/routes/web.php');
         $this->loadMigrationsFrom(__DIR__.'/database/migrations/');
-        $this->publishes([__DIR__.'/resources/views/settings' => resource_path('views/vendor/settings')], 'components');
+        $this->publishes([__DIR__.'/resources/views/settings' => resource_path('views/vendor/settings')], 'views');
         $this->publishes([__DIR__.'/config/settings.php' => config_path('settings.php')], 'config');
         $this->publishes([__DIR__.'/database/migrations/' => database_path('migrations')], 'migrations');
     }
