@@ -1,0 +1,30 @@
+{
+    "name": "cwsps154/laravel-settings",
+    "description": "Package that help for creating settings in your Laravel project",
+    "type": "library",
+    "require": {
+        "php": "^7.4|^8.0|^8.1|^8.2",
+        "laravel/framework": "^8.0|^9.0|^10.0",
+        "cwsps154/bootstrap-ui-components": "^2.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "CWSPS154\\Settings\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "CWSPS154",
+            "email": "codewithsps154@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CWSPS154\\Settings\\SettingsServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
