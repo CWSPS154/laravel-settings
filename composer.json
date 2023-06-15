@@ -1,6 +1,7 @@
 {
     "name": "cwsps154/laravel-settings",
     "description": "Package that help for creating settings in your Laravel project",
+    "version": "0.0.3",
     "type": "library",
     "require": {
         "php": "^7.4|^8.0|^8.1|^8.2",

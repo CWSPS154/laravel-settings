@@ -19,6 +19,6 @@
 use CWSPS154\Settings\Http\Controllers\SettingsController;
 use Illuminate\Support\Facades\Route;
 
-Route::group(['middleware' => ['web']], function () {
+Route::group(config('settings.route'), function () {
     Route::resource('settings',SettingsController::class)->only(['index','store','show']);
 });

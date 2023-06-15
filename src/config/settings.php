@@ -17,8 +17,12 @@
  * */
 
 return [
-    'layout' => 'layouts.app.app_layout',
-    'section' => 'content',
+    'layout' => 'layouts.app',
+    'section' => 'contents',
+    'route' => [
+        'prefix' => 'backend',
+        'middleware' => ['web'],
+    ],
     'show-error' => true,
     'show-success' => true
 ];
