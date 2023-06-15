@@ -17,8 +17,11 @@
  * */
 
 return [
-    'layout' => 'layouts.app',
-    'section' => 'contents',
+    'layout' => [
+        'name'=>'layouts.app',
+        'parameter'=>[],
+        'section' => 'content',
+    ],
     'route' => [
         'prefix' => 'backend',
         'middleware' => ['web'],

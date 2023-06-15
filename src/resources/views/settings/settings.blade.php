@@ -1,5 +1,5 @@
-@extends(config('settings.layout'))
-@section(config('settings.section'))
+@extends(config('settings.layout.name'),config('settings.layout.parameter'))
+@section(config('settings.layout.section'))
     <div class="container">
         <div class="row justify-content-center">
             <div class="card">
