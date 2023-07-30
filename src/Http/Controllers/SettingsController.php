@@ -53,16 +53,14 @@ class SettingsController extends Controller
     {
         return Validator::make($data, [
             'key.*' => ['nullable', 'lowercase', 'string', 'max:255'],
-            'default.*' => ['nullable', 'string', 'max:255'],
-            'value.*' => ['nullable', 'string', 'max:255'],
+            'default.*' => ['nullable', 'string'],
+            'value.*' => ['nullable', 'string'],
         ], [
             'key.*.lowercase' => 'Key value(s) must be in lowercase',
             'key.*.string' => 'Key value(s) must be in string',
             'key.*.max' => 'Key value(s) must not be greater than 255 characters.',
             'default.*.string' => 'Default value(s) must be in string',
-            'default.*.max' => 'Default value(s) must not be greater than 255 characters.',
-            'value.*.string' => 'Value(s) must be in string',
-            'value.*.max' => 'Value(s) must not be greater than 255 characters.',
+            'value.*.string' => 'Value(s) must be in string'
         ]);
     }
 

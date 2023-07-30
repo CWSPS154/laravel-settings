@@ -14,8 +14,8 @@ return new class extends Migration
         Schema::create('settings', function (Blueprint $table) {
             $table->uuid('id')->primary();
             $table->string('key')->nullable();
-            $table->string('default')->nullable();
-            $table->string('value')->nullable();
+            $table->text('default')->nullable();
+            $table->text('value')->nullable();
             $table->boolean('status')->default(false);
         });
     }
